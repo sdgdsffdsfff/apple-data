@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.appleframework.data</groupId>
 	<artifactId>apple-data</artifactId>
-	<version>0.0.6.RELEASE</version>
+	<version>0.0.8.RELEASE</version>
 	<packaging>pom</packaging>
 	
 	<modules>
@@ -12,7 +12,11 @@
     	<module>apple-data-hbase98</module>
     	<module>apple-data-spring</module>
 	</modules>
-
+	
+	<properties>
+		<file.encoding>UTF-8</file.encoding>
+	</properties>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -76,11 +80,11 @@
 			</activation>
 			<distributionManagement>
 				<repository>
-					<id>internal.repo.release</id>
+					<id>apple-releases</id>
 					<url>http://mvnrepo.appleframework.com/nexus/content/repositories/releases/</url>
 				</repository>
 				<snapshotRepository>
-					<id>internal.repo.snapshot</id>
+					<id>apple-snapshots</id>
 					<url>http://mvnrepo.appleframework.com/nexus/content/repositories/snapshots/</url>
 				</snapshotRepository>
 			</distributionManagement>
